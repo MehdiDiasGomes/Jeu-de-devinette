@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -6,11 +6,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: cadetblue;
+body {
+    background: #007991;
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);
+    background: linear-gradient(to right, #78ffd6, #007991);
 }
 
-.header{
+.header {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
@@ -18,17 +20,18 @@ body{
     flex-direction: column;
 }
 
-.header h1{
+.header h1 {
     font-size: 4rem;
     letter-spacing: 5px;
+    color: white;
 }
 
-.header h2{
+.header h2 {
     font-size: 2rem;
     letter-spacing: 2px;
 }
 
-.zone-jeu{
+.zone-jeu {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -44,7 +47,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.zone-jeu input{
+.zone-jeu input {
     padding-left: 0.5rem;
     width: 700px;
     height: 50px;
@@ -53,12 +56,12 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.zone-jeu .btn{
+.zone-jeu .btn {
     display: flex;
     gap: 2rem;
 }
 
-.zone-jeu button{
+.zone-jeu button {
     margin-top: 2rem;
     width: 200px;
     height: 60px;
@@ -70,46 +73,45 @@ body{
     transition: .5s;
 }
 
-.zone-jeu button:hover{
+.zone-jeu button:hover {
     transform: scale(1.09);
 }
 
-.zone-jeu #clear{
+.zone-jeu #clear {
     background-color: rgb(141, 55, 55);
 }
 
-.zone-jeu #valid{
+.zone-jeu #valid {
     background-color: rgb(58, 156, 49);
 }
 
-.zone-jeu .inter{
+.zone-jeu .inter {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.zone-jeu .question{
+.zone-jeu .question {
     margin-top: 2rem;
     text-align: center;
 }
 
-.zone-jeu .question h2{
+.zone-jeu .question h2 {
     font-size: 2.5rem;
     color: white;
 }
 
-.zone-jeu .question h3{
+.zone-jeu .question h3 {
     font-size: 1.7rem;
     color: white;
 }
 
-.zone-jeu .question p{
+.zone-jeu .question p {
     font-size: 1.5rem;
     color: rgb(14, 233, 33);
 }
 
-.zone-jeu .notif h2{
+.zone-jeu .notif h2 {
     color: rgb(30, 211, 30);
 }
-
