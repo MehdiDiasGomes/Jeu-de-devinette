@@ -29,6 +29,7 @@ body {
 .header h2 {
     font-size: 2rem;
     letter-spacing: 2px;
+    color: rgb(73, 72, 72);
 }
 
 .zone-jeu {
