@@ -45,6 +45,7 @@ body{
 }
 
 .zone-jeu input{
+    padding-left: 0.5rem;
     width: 700px;
     height: 50px;
     font-size: 30px;
