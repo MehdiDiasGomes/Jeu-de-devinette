@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- SCRIPT -->
+    <script src="main.js" defer></script>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Devinette</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>DEVINETTE</h1>
+        <h2>By Mehdi</h2>
+    </div>
+
+    <div class="zone-jeu">
+        <div class="question">
+            <h2>A toi de jouer !</h2>
+            <h3>La devinette est : </h3>
+            <p id="devinette">Qu'est-ce qui est jaune et qui attend ?</p>
+        </div>
+        <div class="inter">
+            <input type="text" placeholder="Entrer la réponse ici">
+            <div class="btn">
+                <button type="submit" id="clear">RESET</button>
+                <button type="submit" id="valid">VALIDER</button>
+            </div>
+        </div>
+        <div class="notif">
+            <h2 id="notification">notif</h2>
+        </div>
+    </div>
+</body>
+
+</html>

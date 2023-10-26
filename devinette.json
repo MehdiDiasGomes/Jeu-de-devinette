@@ -1,0 +1,13 @@
+[
+    {
+        "id" : 1,
+        "devinette" : "Qu'est-ce qui est jaune et qui attend ?",
+        "reponse" : "Johnatan"
+    },
+
+    {
+        "id" : 2,
+        "devinette" : "Qu'est-ce qui doit être cassé avant qu'on l'utilise ?",
+        "reponse" : "Un oeuf"
+    }
+]
