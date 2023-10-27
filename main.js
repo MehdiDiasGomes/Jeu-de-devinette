@@ -68,7 +68,7 @@ btnValid.addEventListener("click", () => {
     if (devinetteAssociee && reponseUtilisateur === devinetteAssociee.reponse.toLowerCase()) {
         notif.textContent = "Bravo ! tu as trouvé 🎉";
     } else {
-        notif.innerHTML = `Faux ! La réponse était : <span style="color: white;">${devinetteAssociee.reponse}</span>`;
+        notif.innerHTML = `<span style="color: rgb(177, 62, 62);">Faux</span> ! La réponse était : ${devinetteAssociee.reponse}`;
 
     }
 })
@@ -81,4 +81,6 @@ btnClear.addEventListener("click", () => {
 
 //Afficher devinette aleatoire à chaque actualisation de la page
 afficherDevinetteAleatoire();
+
+
 

@@ -10,22 +10,38 @@
 
     <!-- SCRIPT -->
     <script src="main.js" defer></script>
+    <script src="design.js" defer></script>
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+    <!-- CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <title>Devinette</title>
 </head>
 
 <body>
+
+    <div id="changeur">
+        <div class="icon">
+            <i class="ri-sun-fill"></i>
+            <i class="ri-moon-fill"></i>
+        </div>
+        <div class="cercle">
+
+        </div>
+    </div>
+
     <div class="header">
         <h1>DEVINETTE</h1>
         <h2>By Mehdi</h2>
     </div>
 
     <div class="zone-jeu">
+        <i class="ri-question-mark"></i>
         <div class="question">
             <h2>A toi de jouer !</h2>
             <h3>La devinette est : </h3>
@@ -42,6 +58,14 @@
             <h2 id="notification">notif</h2>
         </div>
     </div>
+
+    <section class="footer-container">
+        <div class="footer">
+          <div class="mon-text">
+            <h5>&copy; 2023 Mehdi DIAS GOMES</h5>
+          </div>
+        </div>
+      </section>
 </body>
 
 </html>

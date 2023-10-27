@@ -7,9 +7,92 @@
 }
 
 body {
-    background: #007991;
-    background: -webkit-linear-gradient(to right, #78ffd6, #007991);
-    background: linear-gradient(to right, #78ffd6, #007991);
+    background: white;
+    transition: .5s;
+}
+
+#changeur{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 500px;
+    background-color: white;
+    border: 1px solid;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.cercle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(168, 103, 6);
+    width: 50px;
+    height: 50px;;
+    border-radius: 500px;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.icon{
+    position: relative;
+    top: 30%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 1rem;
+    z-index: 10;
+}
+
+#changeur.active .cercle {
+    left: 50px;
+    background-color: rgb(168, 103, 6);
+}
+
+#changeur.active{
+    background-color: #1e1e1e;
+    border: 1px solid white;
+}
+
+.icon i.active{
+    color: #1e1e1e;
+}
+
+body.active {
+    background-color: #1e1e1e;
+}
+
+.header h1.active{
+    color: white;
+}
+
+.zone-jeu.active{
+    background-color: #353535ef;
+    box-shadow: rgba(59, 59, 59, 0.35) 0px 5px 15px;
+}
+
+.zone-jeu .question h2.active{
+    color: white;
+}
+
+.zone-jeu .question h3.active{
+    color: white;
+}
+
+.zone-jeu .inter input.active{
+    border: 1px solid white;
+    color: white;
+}
+
+.zone-jeu .inter .btn button.active{
+    border: 1px solid white;
+    color: white;
+}
+
+.footer-container .footer h5.active{
+    color: white;
 }
 
 .header {
@@ -18,18 +101,19 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: .5s;
 }
 
 .header h1 {
     font-size: 4rem;
     letter-spacing: 5px;
-    color: white;
+    color: black;
 }
 
 .header h2 {
     font-size: 2rem;
     letter-spacing: 2px;
-    color: rgb(73, 72, 72);
+    color: rgb(168, 103, 6);
 }
 
 .zone-jeu {
@@ -43,9 +127,19 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(61, 92, 94);
+    background-color: rgb(221, 219, 219);
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .5s;
+}
+
+.zone-jeu .ri-question-mark{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: rgb(168, 103, 6);
+    transform: rotate(15deg);
+    font-size: 2.5rem;
 }
 
 .zone-jeu input {
@@ -55,6 +149,12 @@ body {
     font-size: 30px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #1e1e1e;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    background: none;
+    box-shadow: none;
 }
 
 .zone-jeu .btn {
@@ -68,22 +168,26 @@ body {
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 500;
     transition: .5s;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    background: none;
+    box-shadow: none;
 }
 
 .zone-jeu button:hover {
     transform: scale(1.09);
 }
 
-.zone-jeu #clear {
-    background-color: rgb(141, 55, 55);
+.zone-jeu #clear:hover {
+    background-color: red;
 }
 
-.zone-jeu #valid {
-    background-color: rgb(58, 156, 49);
+.zone-jeu #valid:hover {
+    background-color: green;
 }
 
 .zone-jeu .inter {
@@ -96,23 +200,51 @@ body {
 .zone-jeu .question {
     margin-top: 2rem;
     text-align: center;
+    width: 90%;
 }
 
 .zone-jeu .question h2 {
     font-size: 2.5rem;
-    color: white;
+    color: black;
 }
 
 .zone-jeu .question h3 {
     font-size: 1.7rem;
-    color: white;
+    color: black;
 }
 
 .zone-jeu .question p {
     font-size: 1.5rem;
-    color: rgb(14, 233, 33);
+    color: rgb(168, 103, 6);
 }
 
 .zone-jeu .notif h2 {
-    color: rgb(30, 211, 30);
+    color: white
+}
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 3rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer h5 {
+    color: var(--white-color);
+    font-size: 1rem;
+    color: black;
 }
